@@ -9,6 +9,7 @@ const sequelize = new Sequelize('postgres', 'postgres', 'admin', {
 
 const db = {};
 db.students = require('./models/students')(sequelize, Sequelize);
+db.studentsView = require('./models/students_view')(sequelize, Sequelize);
 
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;

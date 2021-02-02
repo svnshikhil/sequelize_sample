@@ -4,7 +4,7 @@ const port = 2255
 const db = require('./db')
 
 app.get('/', (req, res) => {
-    db.students.findAll({})
+    db.studentsView.findAll({})
         .then(data => {
             res.send({
                 msg: "Data fetched sucessfully",
