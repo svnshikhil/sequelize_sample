@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = (sequelize, DataTypes) => {
-    const StudentsView = sequelize.define('students', {
+    const StudentsView = sequelize.define('view_students', {
         id: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
             required: true
         }
     }, {
-        timestamps: false
+        timestamps: false,
     });
     return StudentsView;
 };
