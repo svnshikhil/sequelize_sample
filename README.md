@@ -9,6 +9,7 @@ To get the Node server running locally:
 - `npm install` to install all required dependencies
 - Change the postgres path in config/config.json and db.js
 - `npm start` to start the local server
+- `Goto` [http://localhost:2255/](http://localhost:2255/) in your browser to view the response
 
 
 
