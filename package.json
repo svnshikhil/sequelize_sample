@@ -1,0 +1,23 @@
+{
+  "name": "sequelize_poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "db:seed:make": "sequelize seed:create --name ",
+    "db:seed:run": "sequelize db:seed:all",
+    "db:migration:make": "sequelize migration:create --name ",
+    "db:migration:run": "sequelize db:migrate"
+  },
+  "author": "",
+  "license": "ISC"
+}
